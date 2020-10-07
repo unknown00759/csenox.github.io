@@ -1,7 +1,7 @@
 ---
 title: "Hack The Box - Player"
 tags: [linux,hard,subdomain,ssrf,bfac,ffmpeg,xauth,codiad,cronjob]
-categories: HackTheBox
+categories: HackTheBox-Linux
 ---
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Player%20Box%20762f0a919a0948b2bfe663bcf20aef16/Untitled.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Player%20Box%20762f0a919a0948b2bfe663bcf20aef16/Untitled.png)
