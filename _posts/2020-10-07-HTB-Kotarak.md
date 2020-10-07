@@ -1,7 +1,7 @@
 ---
 title: "Hack The Box - Kotarak"
 tags: [linux,hard,ssrf,tomcat,ntds.dit,ntlm,secretsdump,wget,cronjob]
-categories: HackTheBox
+categories: HackTheBox-Linux
 ---
 
 
