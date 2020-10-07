@@ -1,7 +1,7 @@
 ---
 title: "Hack The Box - Ariekei"
 tags: [linux,insane,shellshock,cgi-bin,imagetragick,docker containers,container,port 1022,docker abuse]
-categories: HackTheBox
+categories: HackTheBox-Linux
 ---
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Ariekei%20Box%20f58f647509ac4dbebc0d128b6cdee575/Untitled.png)
