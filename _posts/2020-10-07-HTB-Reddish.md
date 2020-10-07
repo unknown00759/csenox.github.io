@@ -1,7 +1,7 @@
 ---
 title: "Hack The Box - Reddish"
 tags: [linux,insane,node-red,node red,node.js,pivoting,proxychains,metasploit,redis server,redis webshell,rsync wildcard,cronjob]
-categories: HackTheBox
+categories: HackTheBox-Linux
 ---
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Reddish%20Box%20c238084c8dce4904a0b15346c2be4c32/Untitled.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Reddish%20Box%20c238084c8dce4904a0b15346c2be4c32/Untitled.png)
