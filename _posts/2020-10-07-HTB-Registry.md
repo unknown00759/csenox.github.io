@@ -1,7 +1,7 @@
 ---
 title: "Hack The Box - Registry"
 tags: [linux,hard,docker registry,docker,restic,bolt,rest server,repository,backup]
-categories: HackTheBox
+categories: HackTheBox-Linux
 ---
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Registry%20Box%209916a096cda74f3ba3a69564d298c0ec/Untitled.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Registry%20Box%209916a096cda74f3ba3a69564d298c0ec/Untitled.png)
