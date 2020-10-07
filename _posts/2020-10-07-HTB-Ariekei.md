@@ -112,4 +112,4 @@ Password : **Ib3!kTEvYw6*P7s**
 
 ***ROOTED***
 
-[TL;DR](https://www.notion.so/TL-DR-d857de4c7a7f4e33969f8b229768d67a)
+
