@@ -1,7 +1,7 @@
 ---
 title: "Hack The Box - Mischief"
 tags: [linux,insane,snmp,ipv6,snmp-check,enyx,bash history, code injection]
-categories: HackTheBox
+categories: HackTheBox-Linux
 ---
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Mischief%20Box%2063a8665538674a6daa134ef527fe48b2/Untitled.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Mischief%20Box%2063a8665538674a6daa134ef527fe48b2/Untitled.png)
