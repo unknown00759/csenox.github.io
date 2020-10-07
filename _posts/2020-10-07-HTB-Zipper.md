@@ -1,7 +1,7 @@
 ---
 title: "Hack The Box - Zipper"
 tags: [linux,hard,zabbix,path hijack]
-categories: HackTheBox
+categories: HackTheBox-Linux
 ---
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Zipper%20Box%20915f35717e244b239ccd458c3a975dab/Untitled.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Zipper%20Box%20915f35717e244b239ccd458c3a975dab/Untitled.png)
