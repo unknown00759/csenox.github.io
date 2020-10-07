@@ -72,4 +72,4 @@ Password : **m$$ql_S@_P@ssW0rd!**
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Mantis%20Box%207c220c3f4b9f496e97c8790896bdcc04/Untitled%2012.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Mantis%20Box%207c220c3f4b9f496e97c8790896bdcc04/Untitled%2012.png)
 
-[TL;DR](https://www.notion.so/TL-DR-6e814a06c94b4fca8c1f69d112ed5c74)
+
