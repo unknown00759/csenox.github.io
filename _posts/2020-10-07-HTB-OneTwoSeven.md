@@ -1,7 +1,7 @@
 ---
 title:     "Hack The Box - OneTwoSeven"
 tags: [sftp,tunneling,ssh,port forwarding,apt hijacking,apt upgrade,apt update]
-categories: HackTheBox
+categories: HackTheBox-Linux
 ---
 
 ![https://raw.githubusercontent.com/csenox/csenox.github.io/master/img/OneTwoSeven%20Box%20fc8aac5cb7804d6d89117815efd54475/Untitled.png](https://raw.githubusercontent.com/csenox/csenox.github.io/master/img/OneTwoSeven%20Box%20fc8aac5cb7804d6d89117815efd54475/Untitled.png)
