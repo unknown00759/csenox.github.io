@@ -104,4 +104,3 @@ SSH : **loki : lokiisthebestnorsegod**
 
 **find / -type f -name root.txt**
 
-[TL;DR](https://www.notion.so/TL-DR-4adac5dc154f4190ba8f916e6deed67f)
