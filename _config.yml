@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: Nikhil's Cybersec Blog
-subtitle: Walkthroughs for HTB retired machines,Vulnhub and other CTF Challenges.
-description: Cyber Security Enthusiast | eJPT
-author: Nikhil
+title: Enox CyberSec Blogs
+subtitle: CyberSec Blogs written by me
+description: Cyber Security Enthusiast
+author: Enox
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
