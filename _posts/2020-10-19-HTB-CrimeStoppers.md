@@ -8,8 +8,8 @@ categories: HackTheBox-Linux
 
 ⇒ Crimestoppers is an hard difficulty machine made by ippsec which teaches us about :
 
-- PHP Filter LFI
-- PHP zip:// filter LFI for code exec
+- PHP filter:// wrapper LFI
+- PHP zip:// wrapper LFI for code exec
 - Retrieving password from thunderbird files using firepwd
 - apache_modrootme rootkit
 
