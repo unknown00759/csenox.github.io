@@ -1,6 +1,6 @@
 ---
 title: "Hack The Box - CrimeStoppers"
-tags: [linux,hard,lfi,filter,zip,zip://,filter://,apache_modroot,rootkit,backdoor,thunderbird,imapmail,firepwd]
+tags: [linux,hard,lfi,filter,zip,apache_modroot,rootkit,backdoor,thunderbird,imapmail,firepwd]
 categories: HackTheBox-Linux
 ---
 
