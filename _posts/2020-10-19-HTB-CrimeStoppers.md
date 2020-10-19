@@ -75,7 +75,7 @@ categories: HackTheBox-Linux
 
 ---
 
-## Getting RCE [ zip filter ]
+## Getting RCE [ zip wrapper ]
 
 > PHP comes by default with several built-in wrappers for various URL-style protocols for use with the filesystem functions. Among those there are the compression wrappers such as **`zip://`** . This wrapper could allow one to unzip archives on the fly while providing access to the files stored in the archive. So if you abuse that LFI with a URL-style protocol such as **`zip://archive.zip#file.php`** you could potentially bypass this restrictions imposed by the code by uploading a ZIP archive with your PHP code inside of it and then executing it.
 
