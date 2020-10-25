@@ -36,7 +36,7 @@ crackmapexec smb 10.10.10.172 -u users -p users
 
 ---
 
-### Enumerating SMBClient
+### Enumerating SMB
 
 ⇒ So we are able to access users$ smb share as SABatchJobs user :
 
