@@ -103,13 +103,24 @@ as is often the case in many web application deployments.
 
 ⇒ So in this exploit we will create a 301x redirect , when the user machine  try to access that wget archive  file it will redirected to ftp server and that ftp server will be running  on our own attacker machine and it will serve a malicious file which will give us root access 
 
-→ Creating malicious .wgetrc that we will be serving :
+→ Creating malicious .wgetrc File on our Own machine  that we will be serving :
 
-![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Kotarak%20Box%2024e466eadc03400ea6b6c13ae24bb20f/Untitled%2017.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Kotarak%20Box%2024e466eadc03400ea6b6c13ae24bb20f/Untitled%2017.png)
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root2.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root2.png)
 
-→ When we normally try to host the ftp server it doesn't allow us to do so. There is authbind on the system which allows a program which does not or should not run as root to bind to low-numbered ports in a controlled way. 
 
-![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Kotarak%20Box%2024e466eadc03400ea6b6c13ae24bb20f/Untitled%2018.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Kotarak%20Box%2024e466eadc03400ea6b6c13ae24bb20f/Untitled%2018.png)
+=> Run pythonftp server on attacker machine , our own machine 
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/python.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/python.png)
+
+First we need to Edit our exploit and then transfer it into our victim machine  it on the system Using python http server on attcker  and wget on victim  :
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root4.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root4.png)
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root4.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root4.png)
+
+
+
+
 
 
 
