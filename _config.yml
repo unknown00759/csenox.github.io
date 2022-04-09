@@ -7,7 +7,7 @@
 title: Unknown's  CyberSec Blogs
 subtitle: CyberSecurity Blogs written by Mr Unknown
 description: Cyber Security Enthusiast
-author: Unknown
+author: Mr Unknown
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
@@ -216,9 +216,9 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   #LinkLabel: Link
-  GitHub: https://github.com/csenox
-  Twitter: https://twitter.com/csenox1
-  Linkdin: none
+  GitHub: 
+  Twitter: 
+  Linkdin: 
 
 # Social Links Icons
 # Icon Mapping:
