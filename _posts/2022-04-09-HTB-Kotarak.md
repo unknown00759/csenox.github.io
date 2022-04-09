@@ -68,6 +68,18 @@ Lets run [secretsdump.py](http://secretsdump.py) [ a tool from impacket ] to ret
 ```impacket-secretsdump -ntds 20170721114636_default_192.168.110.133_psexec.ntdsgrab._333512.dit -system  20170721114637_default_192.168.110.133_psexec.ntdsgrab._089134.bin LOCAL  
 
 ```
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/hash.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/hash.png)
+
+→ Cracking the NTLM hash
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/crack.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/crack.png)
+
+→ The credentials work and we are able to switch to user atanas : 
+
+**`atanas : f16tomcat!`**
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/su.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/su.png)
+
 
 
 
