@@ -10,7 +10,7 @@ categories: HackTheBox-Linux
 ## *NMAP*
 This Machine is the Hard level machine so i will prefer the Full Port Scan :- 
 
-![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/Untitled%203.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/Untitled%203.png)
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/nmap.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/nmap.png)
 
 
 ## *Enumerating [ SSRF ]*
