@@ -81,6 +81,36 @@ impacket-secretsdump -ntds 20170721114636_default_192.168.110.133_psexec.ntdsgra
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/su.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/su.png)
 
+### *Privilege Escalation to Root*
+
+⇒ We are able to read and write files in root directory. We find the following :
+
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root1.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/root1.png)
+
+→ Looks like there's another docker container  machine on the network with the ip [ 10.0.3.133 ] which is running an wget cron to our http server. We can also see the version of Wget being used  ( Wget/1.16 ). There's an exploit for this version of wget being used
+
+Exploit : [https://www.exploit-db.com/exploits/40064](https://www.exploit-db.com/exploits/40064)
+
+```bash
+GNU Wget before 1.18 when supplied with a malicious URL (to a malicious or 
+compromised web server) can be tricked into saving an arbitrary remote file 
+supplied by an attacker, with arbitrary contents and filename under 
+the current directory and possibly other directories by writing to .wgetrc.
+Depending on the context in which wget is used, this can lead to remote code 
+execution and even root privilege escalation if wget is run via a root cronjob 
+as is often the case in many web application deployments.
+```
+
+⇒ So in this exploit we will create a 301x redirect , when the user machine  try to access that wget archive  file it will redirected to ftp server and that ftp server will be running  on our own attacker machine and it will serve a malicious file which will give us root access 
+
+→ Creating malicious .wgetrc that we will be serving :
+
+![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Kotarak%20Box%2024e466eadc03400ea6b6c13ae24bb20f/Untitled%2017.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Kotarak%20Box%2024e466eadc03400ea6b6c13ae24bb20f/Untitled%2017.png)
+
+→ When we normally try to host the ftp server it doesn't allow us to do so. There is authbind on the system which allows a program which does not or should not run as root to bind to low-numbered ports in a controlled way. 
+
+![https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Kotarak%20Box%2024e466eadc03400ea6b6c13ae24bb20f/Untitled%2018.png](https://raw.githubusercontent.com/CsEnox/csenox.github.io/master/img/Kotarak%20Box%2024e466eadc03400ea6b6c13ae24bb20f/Untitled%2018.png)
+
 
 
 
