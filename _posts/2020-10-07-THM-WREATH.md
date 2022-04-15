@@ -1,5 +1,5 @@
 ---
-title: "CyberSecLabs - Dictionary"
+title: "Task 1"
 tags: [windows,medium]
 categories: THM-Wreath
 ---
