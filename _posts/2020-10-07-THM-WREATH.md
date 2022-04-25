@@ -4,8 +4,6 @@ tags: [windows,medium]
 categories: THM-Wreath
 ---
 
-Coming Soon ....
-
 From Task 1-4 All Those stuff are about setting up the lab which you can find out easily 
 Without wasting both our time will move to the next step 
 
