@@ -12,6 +12,11 @@ Without wasting both our time will move to the next step
 So we will begin with wreath by Task 5 - Enumeration 
 i have performed the full port scan 
 ```
- nmap -sC -sV -p-  --min-rate=500 -oN wreath.txt 10.200.105.200
+nmap -sC -sV -p-  --min-rate=500 -oN wreath.txt 10.200.105.200
+```
+img 
 
+```
+Answer 1 :- 4
+Note :- only open ports 
 ```
