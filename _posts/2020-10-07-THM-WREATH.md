@@ -74,11 +74,13 @@ we can now copy victim  private ssh key i.e id_rsa  to access his machine whenev
 
 copy this and paste it in our attacker machine and do chmod 600 id_rsa 
 
-img
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/THM_WREATH/ssh%201.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/THM_WREATH/ssh%201.png)
 
-img
+ssh -i rsa root@machineip
 
-and 
+![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/THM_WREATH/ssh%202.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/THM_WREATH/ssh%202.png)
+
+ 
 ssh -i rsa root@machineip 
 
 
