@@ -83,4 +83,13 @@ ssh -i rsa root@machineip
  
 ssh -i rsa root@machineip 
 
+```
+Answer 1 :- root
+Note :- type whoami
 
+Answer 2 - $6$i9vT8tk3SoXXxK2P$HDIAwho9FOdd4QCecIJKwAwwh8Hwl.BdsbMOUAd3X/chSCvrmpfy.5lrLgnRVNq6/6g0PxK9VqSdy47/qKXad1
+Note:- cd /etc -> cat shadow
+
+Answer 3 :- /root/.ssh/id_rsa
+
+```
