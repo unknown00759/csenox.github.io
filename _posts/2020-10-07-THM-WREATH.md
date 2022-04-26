@@ -19,4 +19,17 @@ img
 ```
 Answer 1 :- 4
 Note :- only open ports 
+
+Answer 2 - centos
+
+Answer 3 :- https://thomaswreath.thm/
+
+Answer 4 :- +447821548812
+
+Answer 5 - MiniServ 1.890 (Webmin httpd)
+
+Answer 6 - CVE-2019-15107 
+Note :- by searching miniserv 1.890 (webmin httpd) exploit on  google 
+we get this link https://www.rapid7.com/db/vulnerabilities/http-webmin-cve-2019-15107/
+
 ```
