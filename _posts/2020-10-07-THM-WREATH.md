@@ -69,4 +69,16 @@ in other section , the same function "unix_crypt" is called again for validate t
 At this point, we will use "vertical bar (|)" by reading the shadow file during validating the old password.
 And then we can Try To run the different comman on the server 
 ```
-Exploit Explaination 
+
+we can now copy victim  private ssh key i.e id_rsa  to access his machine whenever we want 
+
+copy this and paste it in our attacker machine and do chmod 600 id_rsa 
+
+img
+
+img
+
+and 
+ssh -i rsa root@machineip 
+
+
