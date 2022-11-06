@@ -4,6 +4,7 @@ tags: [linux,hard,ssrf,tomcat,ntds.dit,ntlm,secretsdump,wget,cronjob]
 categories: HackTheBox-Linux
 ---
 
+![image](https://user-images.githubusercontent.com/66876484/200165591-01fc8ffd-82b3-44b3-a126-893a5dc223d7.png)
 
 ![https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/title.png](https://raw.githubusercontent.com/unknown00759/unknown00759.github.io/master/img/HTB-KOTARAK/title.png)
 
