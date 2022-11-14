@@ -1,5 +1,5 @@
 ---
 title: "Sql Lab 1"
-tags: [windows,medium]
-categories: PortSwigger-SQl
+tags: [sql injection,medium,burpsuite,Bugbounty]
+categories: PortSwigger SQl Lab 1
 ---
